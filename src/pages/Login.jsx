@@ -82,24 +82,9 @@ const Login = () => {
           </button>
         </form>
 
-        <div className="relative flex py-6 items-center">
-          <div className="flex-grow border-t border-gray-200"></div>
-          <span className="mx-4 text-gray-400 text-xs font-bold uppercase">O</span>
-          <div className="flex-grow border-t border-gray-200"></div>
-        </div>
 
         <div className="space-y-4">
           {/* Google */}
-          <GoogleLogin
-            onSuccess={(credentialResponse) => handleGoogleLogin(credentialResponse.credential)}
-            onError={() => console.log('Google Login Failed')}
-            useOneTap={false}
-            theme="filled_black"
-            text="signin_with"
-            shape="rectangular"
-            logo_alignment="left"
-            width="100%"
-          />
 
           {/* Facebook - usando render prop para mejor control de estilos */}
          {/* <FacebookLogin
