@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Gastos from './pages/Gastos';
 import Ingresos from './pages/Ingresos';
 import Navbar from './components/Navbar';
+
 const PrivateLayout = () => {
   const { token } = useAuth();
   
