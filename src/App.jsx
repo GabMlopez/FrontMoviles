@@ -3,7 +3,7 @@ import { useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Gastos from './pages/Gastos';
 import Ingresos from './pages/Ingresos';
-import { NavBar } from './components/NavBar';
+import NavBar from './components/NavBar';
 
 const PrivateLayout = () => {
   const { token } = useAuth();
